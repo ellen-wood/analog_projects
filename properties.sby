@@ -1,0 +1,13 @@
+[options]
+mode prove
+
+[engines]
+smtbmc
+
+[script]
+read -formal wrapper.v
+prep -top wrapped_project
+
+[files]
+wrapper.v
+properties.v
